@@ -1,0 +1,7 @@
+version: '2'
+services:
+  server:
+    build: server/
+    ports:
+      - '8081:8080'
+    command: 'gunicorn app:app -b :8080'
